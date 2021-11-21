@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div id="title">
+       <h1>Zetech University Survey Form</h1>
+       <p id="description">Thank you for taking the time to help us improve the platform
+    </p>
+
+   </div> 
+   <form id="survey-form">
+       <div>
+           <label for="input">Name
+           <input type="text" id="name-label" placeholder="Enter your name" required>
+        </label>
+       </div>
+       <div>
+           <label for="input">Email
+            <input type="text" id="email-label" placeholder="Enter your Email" required>
+           </label>
+       </div>
+       <div>
+           <label for="input">Age <span>(Optional)</span>
+            <input type="number" id="number-label" placeholder="Age" max="99" min="10">
+            </label>
+        </div>
+       <div>
+           <p class="describe">Which option best describes your current status?</p>
+           <select name="dropdown" id="dropdown">
+               <option value="select current role" disabled selected>select current role</option>
+               <option value="Student">Student</option>
+               <option value="Full Time Job">Full Time Job</option>
+               <option value="Full Time Learner">Full Time Learner</option>
+               <option value="Prefer Not to say">Prefer Not to say</option>
+               <option value="Other">Other</option>
+           </select>
+       </div>
+       <div class="radio-button">
+           <p>Would you recommend Zetech University to a friend?</p>
+           <div>
+                <input type="radio" name="ra-button" value="Definitely" checked>
+                <label for="Definitely">Definitely</label>
+            </div>
+            <div>   
+                <input type="radio" name="ra-button" value="Maybe">
+                <label for="Maybe">Maybe</label>
+            </div>
+            <div>
+                <input type="radio" name="ra-button" value="Not sure">
+                <label for="Not sure">Not sure</label>
+            </div>
+       </div>
+       <div>
+        <p class="describe">What is your favorite Part of Zetech University Websites?
+        </p>
+        <select name="dropdown" id="dropdown">
+            <option value="select an option" disabled selected>select current role</option>
+            <option value="Challenges">Elearning Websites?</option>
+            <option value="Projects">Portal</option>
+            <option value="Community">Library</option>
+            
+        </select>
+    </div>
+    <div>
+           <p class="describe">Which tab would you like to see improved? <span>(Check all that apply)</span></p>
+           <label class="container">Media
+            <input type="checkbox">
+            <span class="mark"></span>
+          </label>
+          <label class="container">Home
+            <input type="checkbox">
+            <span class="mark"></span>
+
+          </label>
+          <label class="container">About
+            <input type="checkbox">
+            <span class="mark"></span>
+          </label>
+          <label class="container">Admissions Programs
+            <input type="checkbox">
+            <span class="mark"></span>
+          </label>
+          <label class="container">Apply online
+            <input type="checkbox">
+            <span class="mark"></span>
+          </label>
+          <label class="container">Student Life
+            <input type="checkbox">
+            <span class="mark"></span>
+          </label>
+          <label class="container">Portals
+            <input type="checkbox">
+            <span class="mark"></span>
+          </label>
+       </div>
+        <div>
+            <p class="describe">Any comments or suggestions?</p>
+            <textarea name="input" id="textarea" cols="82" rows="8" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div>
+            <input type="submit" id="submit" value="Submit">
+        </div>
+
+
+    
+   </form>
+</body>
+</html>
